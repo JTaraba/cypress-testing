@@ -1,7 +1,7 @@
 // These tests should cover the Country route
 
 describe('testing Country route', () => {
-    it('navigate to Country route', () => {
+    it('traverse the Country page', () => {
         cy.visit('https://www.app.destify.com/sales-lead#Destination')
         cy.get("[data-testid='button-next']").click()
         cy.url().should('eq', 'https://www.app.destify.com/sales-lead#Country')
